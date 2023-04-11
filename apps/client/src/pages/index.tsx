@@ -10,7 +10,7 @@ export const formatDateVN = (date: string) => {
 export function Index(props: { date: string }) {
   return (
     <div className={styles.page}>
-      <p>{greetingMessage()},</p>
+      {/* <p>{greetingMessage(new Date())},</p> */}
       <div className="wrapper">
         <div className="container">
           <p>{format(new Date(props.date), 'do MMMM', { locale: vi })}</p>
