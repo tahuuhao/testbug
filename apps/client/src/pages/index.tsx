@@ -1,7 +1,6 @@
 import styles from './index.module.css';
 import { vi } from 'date-fns/locale';
 import { format, parseISO } from 'date-fns';
-import { greetingMessage } from '@client/utils/date';
 
 export const formatDateVN = (date: string) => {
   return format(parseISO(date), 'dd/MM/yyyy');
@@ -10,7 +9,6 @@ export const formatDateVN = (date: string) => {
 export function Index(props: { date: string }) {
   return (
     <div className={styles.page}>
-      {/* <p>{greetingMessage(new Date())},</p> */}
       <div className="wrapper">
         <div className="container">
           <p>{format(new Date(props.date), 'do MMMM', { locale: vi })}</p>
