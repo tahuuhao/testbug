@@ -1,10 +1,5 @@
 import styles from './index.module.css';
-import { vi } from 'date-fns/locale';
-import { format, parseISO } from 'date-fns';
-
-export const formatDateVN = (date: string) => {
-  return format(parseISO(date), 'dd/MM/yyyy');
-};
+import {formatDateVN} from '@client/utils/date'
 
 export function Index(props: { date: string }) {
   return (
