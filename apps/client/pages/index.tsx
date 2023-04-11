@@ -1,4 +1,6 @@
 import styles from './index.module.css';
+import { vi } from 'date-fns/locale';
+import { format } from 'date-fns';
 
 export function Index() {
   /*
@@ -10,6 +12,7 @@ export function Index() {
     <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
+          {format(new Date(), 'do MMMM', { locale: vi })}
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
@@ -411,5 +414,10 @@ export function Index() {
     </div>
   );
 }
+export const getServerSideProps = async () => {
+  return {
+    props: {},
+  };
+};
 
 export default Index;
