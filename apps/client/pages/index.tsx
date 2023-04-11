@@ -22,6 +22,10 @@ export function Index() {
           }
           <br/>
           {
+            +parseISO('2023-04-11T02:20:51.332Z')
+          }
+          <br/>
+          {
             formatDateVN('2023-04-11T02:20:51.332Z')
           }
           <div id="welcome">
