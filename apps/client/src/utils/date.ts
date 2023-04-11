@@ -20,9 +20,8 @@ export const formatDateTimeVN = (date: string) => {
   return format(parseISO(date), 'hh:mm:ss dd/MM/yyyy');
 };
 
-export const greetingMessage = () => {
-  const today = new Date();
-  const curHr = today.getHours();
+export const greetingMessage = (date: Date) => {
+  const curHr = date.getHours();
 
   if (curHr >= 0 && curHr < 6) {
     return 'Chúc ngủ ngon';
