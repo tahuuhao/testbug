@@ -8,7 +8,7 @@ export function Index(props: { date: string }) {
         <div className="container">
           {formatDateVN('2023-04-11T02:20:51.332Z')}
           <p>
-            {/* {greetingMessage(new Date())} */}
+            {greetingMessage(new Date(props.date))}
           </p>
           <div id="welcome">
             <h1>
