@@ -21,8 +21,8 @@ export const formatDateTimeVN = (date: string) => {
 };
 
 export const greetingMessage = (date: Date) => {
-  const curHr = date.getHours();
-
+  // const curHr = date.getHours();
+  const curHr=5
   if (curHr >= 0 && curHr < 6) {
     return 'Chúc ngủ ngon';
   } else if (curHr >= 6 && curHr < 12) {
