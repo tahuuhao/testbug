@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { GreetingMessage } from '@client/components/GreetingMessage';
 import { TimeRender } from '@client/components/TimeRender';
 import { TimeRenderLocalTimeStamp } from '@client/components/TimeRenderLocalTimeStamp';
+import { RenderHourMinuteVN } from '@client/components/RenderHourMinuteVN';
 
 export function Index(props: { date: string }) {
   return (
@@ -22,7 +23,7 @@ export function Index(props: { date: string }) {
             {formatDateVNLocal(new Date('2023-04-12T02:32:54.697Z'))}
           </p>
           <p>
-            {formatHourMinuteVN('2023-04-12T02:32:54.697Z')}
+            <RenderHourMinuteVN time='2023-04-12T02:32:54.697Z'/>
           </p>
           <div id="welcome">
             <h1>
