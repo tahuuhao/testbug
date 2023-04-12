@@ -1,6 +1,7 @@
 import styles from './index.module.css';
 import {formatDateTimeVN, formatDateVN, greetingMessage} from '@client/utils/date'
 import { useEffect, useState } from 'react';
+import { GreetingMessage } from '@client/components/GreetingMessage';
 
 export function Index(props: { date: string }) {
   const [hourse, setHourse] = useState(0)
@@ -14,7 +15,7 @@ export function Index(props: { date: string }) {
         <div className="container">
           {formatDateVN('2023-04-11T02:20:51.332Z')}
           <p>
-            {hourse&&greetingMessage(hourse)}
+            <GreetingMessage/>
           </p>
           {/* <p>
             {formatDateTimeVN('2023-04-11T03:10:29.208Z')}
