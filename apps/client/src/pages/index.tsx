@@ -20,7 +20,7 @@ export function Index(props: { date: string }) {
             {formatDateTimeVN('2023-04-11T03:10:29.208Z')}
           </p>
           <p>
-            {formatDateTimeVN('2023-04-12 09:30:17.754 +0700')}
+            {formatDateTimeVN('2023-04-12T02:32:54.697Z')}
           </p>
           <div id="welcome">
             <h1>
