@@ -2,6 +2,7 @@ import styles from './index.module.css';
 import {formatDateTimeVN, formatDateVN, greetingMessage} from '@client/utils/date'
 import { useEffect, useState } from 'react';
 import { GreetingMessage } from '@client/components/GreetingMessage';
+import { TimeRender } from '@client/components/TimeRender';
 
 export function Index(props: { date: string }) {
   const [hourse, setHourse] = useState(0)
@@ -20,6 +21,7 @@ export function Index(props: { date: string }) {
           <p>
             {formatDateTimeVN('2023-04-11T03:10:29.208Z')}
           </p>
+          <TimeRender time='2023-04-12T02:32:54.697Z'/>
           {/* <p>
             {formatDateTimeVN('2023-04-12T02:32:54.697Z')}
           </p> */}
