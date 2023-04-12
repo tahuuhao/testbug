@@ -1,5 +1,5 @@
 import styles from './index.module.css';
-import {formatDateTimeVN, formatDateVN, formatDateVNLocalTimeStamp, greetingMessage} from '@client/utils/date'
+import {formatDateTimeVN, formatDateVN, formatDateVNLocal, formatDateVNLocalTimeStamp, formatHourMinuteVN, greetingMessage} from '@client/utils/date'
 import { useEffect, useState } from 'react';
 import { GreetingMessage } from '@client/components/GreetingMessage';
 import { TimeRender } from '@client/components/TimeRender';
@@ -18,8 +18,11 @@ export function Index(props: { date: string }) {
             <TimeRenderLocalTimeStamp time='2023-04-12T02:32:54.697Z'/>
           </p>
           <TimeRender time='2023-04-12T02:32:54.697Z'/>
+          <p>
+            {formatDateVNLocal(new Date('2023-04-12T02:32:54.697Z'))}
+          </p>
           {/* <p>
-            {formatDateTimeVN('2023-04-12T02:32:54.697Z')}
+            {formatHourMinuteVN('2023-04-12T02:32:54.697Z')}
           </p> */}
           <div id="welcome">
             <h1>
