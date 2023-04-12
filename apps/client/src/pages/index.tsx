@@ -21,9 +21,9 @@ export function Index(props: { date: string }) {
           <p>
             {formatDateVNLocal(new Date('2023-04-12T02:32:54.697Z'))}
           </p>
-          {/* <p>
+          <p>
             {formatHourMinuteVN('2023-04-12T02:32:54.697Z')}
-          </p> */}
+          </p>
           <div id="welcome">
             <h1>
               <span> Hello there, </span>
