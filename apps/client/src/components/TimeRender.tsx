@@ -7,6 +7,7 @@ interface Props{
 export const TimeRender = ({time}:Props) => {
   const [timeRender, setTimeRender] = useState<string>('')
   useEffect(()=>{
+    const date = Date.parse(time)
     setTimeRender(formatDateTimeVN(time))
   },[time])
   return (
