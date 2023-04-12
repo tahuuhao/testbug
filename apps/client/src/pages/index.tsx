@@ -3,6 +3,7 @@ import {formatDateTimeVN, formatDateVN, formatDateVNLocalTimeStamp, greetingMess
 import { useEffect, useState } from 'react';
 import { GreetingMessage } from '@client/components/GreetingMessage';
 import { TimeRender } from '@client/components/TimeRender';
+import { TimeRenderLocalTimeStamp } from '@client/components/TimeRenderLocalTimeStamp';
 
 export function Index(props: { date: string }) {
   return (
@@ -14,7 +15,7 @@ export function Index(props: { date: string }) {
             <GreetingMessage/>
           </p>
           <p>
-            {formatDateVNLocalTimeStamp(new Date('2023-04-11T03:10:29.208Z'))}
+            <TimeRenderLocalTimeStamp time='2023-04-12T02:32:54.697Z'/>
           </p>
           <TimeRender time='2023-04-12T02:32:54.697Z'/>
           {/* <p>
